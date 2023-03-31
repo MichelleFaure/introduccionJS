@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>Calculando el total</title>
+</head>
+<body>
+    <main>
+        <div class="container">
+<!-- INICIO CARD -->
+            <div class="card">
+                <div class="img-container">
+                    <img src="./assets/img/producto.png" alt="">
+                </div>
+                <h3>Polerón con estampado de gato</h3>
+                <input type="text" class="cantidad" placeholder="Cantidad">
+                <input type="text" class="color" placeholder="Color">
+                <div class="precio-container">
+                    <h2>Precio:</h2>
+                    <p class="precio">10500</p>
+                </div>
+        <!-- EVENTO onclick -->
+                <button onclick = "calcularTotal()">Calcular total</button>
+            </div>
+<!-- FIN CARD -->
+
+            <div class="total">
+                <p>Total: $<span class="total-precio">0</span> </p>
+                <p>Cantidad:<span class="total-cantidad">0</span> </p>
+                <div class="total-color">
+                    <p>Color:</p>
+                    <div></div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="./assets/js/card.js"></script>
+</body>
+</html>
